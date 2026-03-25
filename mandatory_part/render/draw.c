@@ -88,5 +88,6 @@ void	draw(t_scene *scene, t_mlx *mlx)
 			col = rgb_to_hex(color.r, color.g, color.b);
 			*(int *)(mlx->pixels + arr[2]) = col;
 		}
+		mlx_put_image_to_window(mlx->mlx, mlx->mlx_win, mlx->mlx_img, 0, 0);
 	}
 }

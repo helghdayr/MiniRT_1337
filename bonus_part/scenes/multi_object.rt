@@ -1,0 +1,31 @@
+A 0.1 200,200,255
+C -15,10,25 0.5,-0.25,-1 75
+
+l 0,20,0 0.5 255,255,255
+l -12,5,15 0.7 255,0,0
+l 12,5,15 0.7 0,255,0
+l 0,0,30 0.3 255,255,255
+
+pl 0,-2,0 0,1,0 30,30,30 checker 2 60,60,60
+pl 0,0,-25 0,0,1 120,120,120 texture=bonus_part/textures/wall_p.xpm
+
+sp 0,8,-5 7.0 150,150,150 texture=bonus_part/textures/p.xpm
+
+cy -8,0,5 0.5,1,0 1.2 8.0 180,180,180 texture=bonus_part/textures/p.xpm
+cy 8,0,5 -0.5,1,0 1.2 8.0 180,180,180 texture=bonus_part/textures/p.xpm
+
+co -4,0,10 0.2,1,0.2 2.0 4.0 200,100,50
+co 4,0,10 -0.2,1,0.2 2.0 4.0 50,150,200
+
+sp -12,2,8 2.5 255,255,255 checker 8 0,0,255 texture=bonus_part/textures/left_wall.xpm
+sp 12,2,8 2.5 255,255,255 checker 8 255,0,0 texture=bonus_part/textures/left_wall.xpm
+
+cy 0,1,-12 1,0,0 0.8 15.0 100,100,100 checker 1 255,255,255
+
+co 0,12,-5 0,-1,0 4.0 3.0 255,255,50
+
+sp -5,15,-10 1.5 255,255,255 texture=bonus_part/textures/p.xpm
+sp 5,15,-10 1.5 255,255,255 texture=bonus_part/textures/p.xpm
+
+cy -10,0,15 0,1,1 0.5 5.0 120,120,120
+cy 10,0,15 0,1,-1 0.5 5.0 120,120,120

@@ -42,7 +42,6 @@ void	render(t_scene *scene)
 	m->mlx_img = mlx_new_image(m->mlx, WIDTH, HEIGHT);
 	m->pixels = mlx_get_data_addr(m->mlx_img, &m->bpp, &m->s_line, &m->endian);
 	draw(scene, m);
-	mlx_put_image_to_window(m->mlx, m->mlx_win, m->mlx_img, 0, 0);
 	mlx_key_hook(m->mlx_win, &handle_event, scene);
 	mlx_hook(m->mlx_win, 17, 0, close_window, scene);
 	mlx_loop(m->mlx);
