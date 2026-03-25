@@ -1,0 +1,202 @@
+# ============================================================
+# ROBOT SCENE — "Three Droids at Dusk"
+# miniRT Bonus Format
+# ============================================================
+
+# Ambient light (warm industrial glow)
+A 0.15 255,200,160
+
+# Camera — looking slightly down at the robots
+C -4,6,-18 0.15,-0.08,1 65
+
+# ============================================================
+# LIGHTS
+# ============================================================
+
+# Main key light (warm overhead)
+l 0,12,4 0.75 255,220,180
+
+# Rim light (cool blue from behind-right)
+l 8,8,12 0.45 100,160,255
+
+# Ground bounce (subtle warm fill)
+l 0,0.5,2 0.2 255,180,100
+
+# ============================================================
+# FLOOR / ENVIRONMENT
+# ============================================================
+
+# Concrete floor — checker pattern
+pl 0,-1,0 0,1,0 140,130,120 checker 2 90,80,72
+
+# Back wall
+pl 0,5,18 0,0,-1 160,155,150
+
+# Left wall
+pl -14,5,0 1,0,0 150,148,145
+
+# ============================================================
+# ROBOT A — COMMANDER BOT (tall, center-stage)
+# ============================================================
+
+# Head (sphere)
+sp 0,6.2,2 1.2 200,210,215
+
+# Visor / eye (glowing sphere inside head)
+sp 0,6.3,1.55 0.55 80,200,255
+
+# Neck cylinder
+cy 0,5.4,2 0,1,0 0.4 0.6 180,185,190
+
+# Torso (tall cylinder)
+cy 0,3.8,2 0,1,0 1.8 2.6 195,200,205
+
+# Chest detail — horizontal stripe
+cy 0,4.2,1.1 0,0,1 1.6 0.18 80,180,220
+
+# Left shoulder
+sp -1.3,5.1,2 0.55 170,175,180
+
+# Right shoulder
+sp 1.3,5.1,2 0.55 170,175,180
+
+# Left upper arm
+cy -1.6,4.1,2 0,1,0 0.32 1.6 160,165,170
+
+# Right upper arm
+cy 1.6,4.1,2 0,1,0 0.32 1.6 160,165,170
+
+# Left forearm (angled out — commanding pose)
+cy -2.4,3.2,2 0.6,1,0 0.26 1.4 150,155,160
+
+# Right forearm (raised, pointing)
+cy 2.2,4.0,1.8 0.3,1,-0.4 0.26 1.4 150,155,160
+
+# Left hand sphere
+sp -2.85,2.65,2 0.32 140,145,150
+
+# Right hand sphere (raised)
+sp 2.65,4.85,1.5 0.32 140,145,150
+
+# Left leg upper
+cy -0.55,2.1,2 0,1,0 0.42 1.8 185,190,195
+
+# Right leg upper
+cy 0.55,2.1,2 0,1,0 0.42 1.8 185,190,195
+
+# Left knee joint
+sp -0.55,1.15,2 0.45 160,165,170
+
+# Right knee joint
+sp 0.55,1.15,2 0.45 160,165,170
+
+# Left shin
+cy -0.55,0.3,2 0,1,0 0.36 1.5 175,180,185
+
+# Right shin
+cy 0.55,0.3,2 0,1,0 0.36 1.5 175,180,185
+
+# Left foot
+cy -0.55,-0.82,2.2 0,0,1 0.5 1.0 120,125,130
+
+# Right foot
+cy 0.55,-0.82,2.2 0,0,1 0.5 1.0 120,125,130
+
+# ============================================================
+# ROBOT B — WORKER BOT (short & stocky, left side)
+# ============================================================
+
+# Head (boxy — use sphere with small radius as base)
+sp -4.5,3.2,4 0.9 210,160,80
+
+# Eye left
+sp -4.9,3.35,3.35 0.22 255,80,40
+
+# Eye right
+sp -4.15,3.35,3.35 0.22 255,80,40
+
+# Neck
+cy -4.5,2.6,4 0,1,0 0.35 0.5 190,145,70
+
+# Torso (squat, wide)
+cy -4.5,1.6,4 0,1,0 2.0 2.0 200,155,75
+
+# Left arm (reaching out with tool)
+cy -5.8,1.9,4 0.7,0,0.3 0.3 1.8 180,140,65
+
+# Right arm (down, resting)
+cy -3.3,1.4,4 0,1,0 0.3 1.4 180,140,65
+
+# Tool head — drill cone
+co -7.0,1.7,4.5 -1,0,-0.4 0.7 1.2 120,120,125
+
+# Left leg
+cy -4.8,0.0,4 0,1,0 0.45 1.5 190,148,70
+
+# Right leg
+cy -4.2,0.0,4 0,1,0 0.45 1.5 190,148,70
+
+# Feet (flat cylinders)
+cy -4.8,-0.9,4.3 0,0,1 0.55 0.8 110,85,40
+
+cy -4.2,-0.9,4.3 0,0,1 0.55 0.8 110,85,40
+
+# ============================================================
+# ROBOT C — SCOUT BOT (small, wheeled, right side)
+# ============================================================
+
+# Body dome (sphere on a disc)
+sp 4.0,1.4,5 1.1 80,180,120
+
+# Antenna sphere
+sp 4.0,2.8,5 0.18 255,255,80
+
+# Antenna rod
+cy 4.0,2.0,5 0,1,0 0.06 1.2 200,200,200
+
+# Eye sensor (large single lens)
+sp 4.0,1.5,3.95 0.5 30,220,180
+
+# Inner eye reflection
+sp 4.05,1.55,3.7 0.18 200,255,245
+
+# Chassis disc (flat cylinder base)
+cy 4.0,0.4,5 0,1,0 1.4 0.4 60,140,90
+
+# Left wheel
+cy 2.75,0.15,5 1,0,0 0.65 0.35 40,40,40 checker 1 80,80,80
+
+# Right wheel
+cy 5.25,0.15,5 1,0,0 0.65 0.35 40,40,40 checker 1 80,80,80
+
+# Rear wheel
+cy 4.0,0.15,6.3 0,0,1 0.55 0.3 40,40,40
+
+# Side panel detail
+cy 4.0,0.8,4.15 0,0,1 1.2 0.1 50,160,100
+
+# ============================================================
+# ENVIRONMENT DETAILS
+# ============================================================
+
+# Glowing energy cube on floor (decorative)
+sp -1.5,0.0,5 0.6 255,160,20
+
+# Small cable spool cylinder
+cy 2.5,-0.6,7 0,0,1 0.8 1.0 100,90,85
+
+# Overhead pipe 1
+cy -6,8,6 1,0,0 0.25 14 130,125,120
+
+# Overhead pipe 2
+cy -6,7.2,9 1,0,0 0.18 12 100,95,90
+
+# Pipe junction sphere
+sp 1.0,8.0,6 0.28 120,115,110
+
+# Warning light (red sphere on pipe)
+sp -2.5,8.0,6 0.2 255,40,20
+
+# ============================================================
+# END OF SCENE
+# ============================================================
