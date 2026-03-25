@@ -12,6 +12,10 @@
 
 #include "../utils.h"
 
+#ifndef OPEN_MAX
+# define OPEN_MAX 1024
+#endif
+
 char	*find_leak(char *all)
 {
 	if (all == NULL)

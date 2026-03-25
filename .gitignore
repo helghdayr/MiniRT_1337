@@ -1,0 +1,10 @@
+*.o
+
+miniRT
+miniRT_bonus
+
+*.a
+minilibx-linux/
+
+.DS_Store
+*.swp

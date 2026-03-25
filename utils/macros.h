@@ -14,7 +14,7 @@
 # define MACROS_H
 
 # include <unistd.h>
-# include <mlx.h>
+// # include <mlx.h>
 # include <time.h>
 # include <limits.h>
 # include <stdio.h>
@@ -23,7 +23,7 @@
 # include <fcntl.h>
 # include <string.h>
 # include <math.h>
-# include "/usr/local/include/mlx.h"
+# include "../minilibx-linux/mlx.h"
 
 # define BUFFER_SIZE 40
 
